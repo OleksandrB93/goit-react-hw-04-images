@@ -1,5 +1,5 @@
 {
-  "name": "goit-react-hw-03-image",
+  "name": "goit-react-hw-04-image",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://oleksandrb93.github.io/goit-react-hw-04-images/",
@@ -51,3 +51,5 @@
     "gh-pages": "^4.0.0"
   }
 }
+
+
