@@ -33,7 +33,7 @@ export default function App() {
         const remainingPages = getRemainingPages(results.totalHits);
 
         if (remainingPages > 0) {
-          setloadBtnIsShown(true);
+           setloadBtnIsShown(true);
         } else {
           setloadBtnIsShown(false);
         }
