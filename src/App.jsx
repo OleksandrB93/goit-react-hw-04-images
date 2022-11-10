@@ -20,8 +20,8 @@ export default function App() {
 
   useEffect(() => {
     if (!inputValue) {
-      return
-    };
+      return;
+    }
 
     setStatus("pending");
 
@@ -32,12 +32,15 @@ export default function App() {
         setImages((images) => [...images, ...results.hits]);
         const remainingPages = getRemainingPages(results.totalHits);
 
-        console.log(remainingPages);
-        if (remainingPages > 0) setloadBtnIsShown(true);
+        if (remainingPages > 0) {
+          setloadBtnIsShown(true);
+        } else {
+          setloadBtnIsShown(false);
+        }
         setStatus("resolved");
       })
       .catch(() => {
-        setStatus('rejected')
+        setStatus("rejected");
         toast.error("Oops... Something went wrong");
       });
   }, [inputValue, page]);
