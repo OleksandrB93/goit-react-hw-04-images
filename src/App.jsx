@@ -80,7 +80,7 @@ export default function App() {
 
       {status === "rejected" && <ImageError message={error.message} />}
 
-      {status === "resolved" && (
+      { (
         <ImageGalleryList images={images} isLoading={isLoading} />
       )}
       {loadBtnIsShown && <ButtonLoadMore onClick={loadMore} />}

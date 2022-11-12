@@ -131,19 +131,6 @@ svg {
 /*
  * Стили компонента ImageGallery
  */
-/* .ImageGallery {
-  display: grid;
-  max-width: calc(100vw - 48px);
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  grid-gap: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 .ImageGallery {
   display: flex;
   justify-content: center;
@@ -165,7 +152,7 @@ svg {
 .ImageGalleryItem {
   background: linear-gradient(-90deg, #bababa, #e5e3e3);
   background-size: 400% 400%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 1s ease infinite;
   transform: translate3d(0, 0, 0);
 
   border-radius: 15px;
@@ -201,7 +188,6 @@ svg {
 }
 
 .ImageGalleryItem-image:hover {
-  transform: scale(1.03);
   cursor: zoom-in;
 }
 
